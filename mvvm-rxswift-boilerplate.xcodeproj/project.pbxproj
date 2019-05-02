@@ -11,12 +11,15 @@
 		3ADD5F27D206ABE0399DBDA2 /* Pods_mvvm_rxswift_boilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE32D3FC441F26BBF6520A5 /* Pods_mvvm_rxswift_boilerplateUITests.framework */; };
 		42CF3EFCE37DDEB5B41C940A /* Pods_mvvm_rxswift_boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA305A8791BA06FF8D6F9934 /* Pods_mvvm_rxswift_boilerplate.framework */; };
 		D71F7A8C227B4D4E00DEA10E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F7A8B227B4D4E00DEA10E /* AppDelegate.swift */; };
-		D71F7A8E227B4D4E00DEA10E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F7A8D227B4D4E00DEA10E /* ViewController.swift */; };
+		D71F7A8E227B4D4E00DEA10E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F7A8D227B4D4E00DEA10E /* LoginVC.swift */; };
 		D71F7A91227B4D4E00DEA10E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F7A8F227B4D4E00DEA10E /* Main.storyboard */; };
 		D71F7A93227B4D4F00DEA10E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71F7A92227B4D4F00DEA10E /* Assets.xcassets */; };
 		D71F7A96227B4D4F00DEA10E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F7A94227B4D4F00DEA10E /* LaunchScreen.storyboard */; };
 		D71F7AA1227B4D4F00DEA10E /* mvvm_rxswift_boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F7AA0227B4D4F00DEA10E /* mvvm_rxswift_boilerplateTests.swift */; };
 		D71F7AAC227B4D4F00DEA10E /* mvvm_rxswift_boilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F7AAB227B4D4F00DEA10E /* mvvm_rxswift_boilerplateUITests.swift */; };
+		D7DBCDB2227B5DB300FAE907 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DBCDB1227B5DB300FAE907 /* LoginModel.swift */; };
+		D7DBCDB4227B5E0700FAE907 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DBCDB3227B5E0700FAE907 /* LoginViewModel.swift */; };
+		D7DBCDB6227B6EF100FAE907 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DBCDB5227B6EF100FAE907 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,7 @@
 		CA305A8791BA06FF8D6F9934 /* Pods_mvvm_rxswift_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_rxswift_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71F7A88227B4D4E00DEA10E /* mvvm-rxswift-boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvvm-rxswift-boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71F7A8B227B4D4E00DEA10E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D71F7A8D227B4D4E00DEA10E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D71F7A8D227B4D4E00DEA10E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		D71F7A90227B4D4E00DEA10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D71F7A92227B4D4F00DEA10E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D71F7A95227B4D4F00DEA10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		D71F7AA7227B4D4F00DEA10E /* mvvm-rxswift-boilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvvm-rxswift-boilerplateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71F7AAB227B4D4F00DEA10E /* mvvm_rxswift_boilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvm_rxswift_boilerplateUITests.swift; sourceTree = "<group>"; };
 		D71F7AAD227B4D4F00DEA10E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DBCDB1227B5DB300FAE907 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		D7DBCDB3227B5E0700FAE907 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D7DBCDB5227B6EF100FAE907 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E12867CB8B227C94D4B1919C /* Pods-mvvm-rxswift-boilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvm-rxswift-boilerplateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mvvm-rxswift-boilerplateUITests/Pods-mvvm-rxswift-boilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,12 +143,12 @@
 		D71F7A8A227B4D4E00DEA10E /* mvvm-rxswift-boilerplate */ = {
 			isa = PBXGroup;
 			children = (
-				D71F7A8B227B4D4E00DEA10E /* AppDelegate.swift */,
-				D71F7A8D227B4D4E00DEA10E /* ViewController.swift */,
-				D71F7A8F227B4D4E00DEA10E /* Main.storyboard */,
-				D71F7A92227B4D4F00DEA10E /* Assets.xcassets */,
-				D71F7A94227B4D4F00DEA10E /* LaunchScreen.storyboard */,
 				D71F7A97227B4D4F00DEA10E /* Info.plist */,
+				D7DBCDAF227B5C9D00FAE907 /* View */,
+				D7DBCDAE227B5C9800FAE907 /* ViewModel */,
+				D7DBCDAD227B5C8F00FAE907 /* Model */,
+				D7DBCDAC227B5C2A00FAE907 /* Application */,
+				D71F7A92227B4D4F00DEA10E /* Assets.xcassets */,
 			);
 			path = "mvvm-rxswift-boilerplate";
 			sourceTree = "<group>";
@@ -163,6 +169,49 @@
 				D71F7AAD227B4D4F00DEA10E /* Info.plist */,
 			);
 			path = "mvvm-rxswift-boilerplateUITests";
+			sourceTree = "<group>";
+		};
+		D7DBCDAC227B5C2A00FAE907 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D71F7A8B227B4D4E00DEA10E /* AppDelegate.swift */,
+				D7DBCDB5227B6EF100FAE907 /* Constants.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D7DBCDAD227B5C8F00FAE907 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7DBCDB1227B5DB300FAE907 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7DBCDAE227B5C9800FAE907 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7DBCDB3227B5E0700FAE907 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D7DBCDAF227B5C9D00FAE907 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7DBCDB0227B5CD700FAE907 /* SupportFiles */,
+				D71F7A8D227B4D4E00DEA10E /* LoginVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7DBCDB0227B5CD700FAE907 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D71F7A94227B4D4F00DEA10E /* LaunchScreen.storyboard */,
+				D71F7A8F227B4D4E00DEA10E /* Main.storyboard */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +354,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mvvm-rxswift-boilerplate/Pods-mvvm-rxswift-boilerplate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
@@ -312,6 +362,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -393,7 +444,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D71F7A8E227B4D4E00DEA10E /* ViewController.swift in Sources */,
+				D7DBCDB6227B6EF100FAE907 /* Constants.swift in Sources */,
+				D7DBCDB4227B5E0700FAE907 /* LoginViewModel.swift in Sources */,
+				D71F7A8E227B4D4E00DEA10E /* LoginVC.swift in Sources */,
+				D7DBCDB2227B5DB300FAE907 /* LoginModel.swift in Sources */,
 				D71F7A8C227B4D4E00DEA10E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

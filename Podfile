@@ -6,6 +6,8 @@ target 'mvvm-rxswift-boilerplate' do
   use_frameworks!
     pod 'RxSwift', '~> 4'
     pod 'RxCocoa', '~> 4'
+    pod 'Alamofire', '~> 4'
+
   # Pods for mvvm-rxswift-boilerplate
 
   target 'mvvm-rxswift-boilerplateTests' do
