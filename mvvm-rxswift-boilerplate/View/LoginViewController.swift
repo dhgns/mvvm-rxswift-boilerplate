@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -37,21 +37,28 @@ class ViewController: UIViewController {
             .bind(to: viewModel.passData)
             .disposed(by: disposeBag)
     
-        loginButton.rx.tap.do(onNext:  { [unowned self] in
-            self.emailTextField.resignFirstResponder()
-            self.passwordTextField.resignFirstResponder()
-        }).subscribe(onNext: { [unowned self] in
-            if self.viewModel.validateCredentials() {
-                self.viewModel.login()
-            }
-        }).disposed(by: disposeBag)
-        
+        loginButton
+            .rx
+            .tap
+            .do(
+                onNext:  {
+                    [unowned self] in
+                        self.emailTextField.resignFirstResponder()
+                        self.passwordTextField.resignFirstResponder()})
+            .subscribe(
+                onNext: {
+                    [unowned self] in
+                        if self.viewModel.validateCredentials() {
+                            self.viewModel.login()
+                        }})
+            .disposed(by: disposeBag)
     }
 
     func bindCallBacks() {
         
         // success
         viewModel.isSuccess.asObservable()
+            //.observeOn(MainScheduler.instance)
             .bind{ value in
                 NSLog("Login ok")
             }.disposed(by: disposeBag)

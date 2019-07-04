@@ -6,7 +6,7 @@ target 'mvvm-rxswift-boilerplate' do
   use_frameworks!
     pod 'RxSwift', '~> 4'
     pod 'RxCocoa', '~> 4'
-    pod 'Alamofire', '~> 4'
+    pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5'
 
   # Pods for mvvm-rxswift-boilerplate
 

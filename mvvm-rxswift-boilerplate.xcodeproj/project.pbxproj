@@ -10,8 +10,10 @@
 		286C087CC7E33C521EEA3881 /* Pods_mvvm_rxswift_boilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6821C2951BA11BF05C55E1D1 /* Pods_mvvm_rxswift_boilerplateTests.framework */; };
 		3ADD5F27D206ABE0399DBDA2 /* Pods_mvvm_rxswift_boilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE32D3FC441F26BBF6520A5 /* Pods_mvvm_rxswift_boilerplateUITests.framework */; };
 		42CF3EFCE37DDEB5B41C940A /* Pods_mvvm_rxswift_boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA305A8791BA06FF8D6F9934 /* Pods_mvvm_rxswift_boilerplate.framework */; };
+		D70D846D22C6283B00697E48 /* libAtPDFSigner-Universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D70D846C22C6283B00697E48 /* libAtPDFSigner-Universal.a */; };
+		D70D847022CCA92100697E48 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70D846F22CCA92100697E48 /* Network.swift */; };
 		D71F7A8C227B4D4E00DEA10E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F7A8B227B4D4E00DEA10E /* AppDelegate.swift */; };
-		D71F7A8E227B4D4E00DEA10E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F7A8D227B4D4E00DEA10E /* LoginVC.swift */; };
+		D71F7A8E227B4D4E00DEA10E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F7A8D227B4D4E00DEA10E /* LoginViewController.swift */; };
 		D71F7A91227B4D4E00DEA10E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F7A8F227B4D4E00DEA10E /* Main.storyboard */; };
 		D71F7A93227B4D4F00DEA10E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71F7A92227B4D4F00DEA10E /* Assets.xcassets */; };
 		D71F7A96227B4D4F00DEA10E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F7A94227B4D4F00DEA10E /* LaunchScreen.storyboard */; };
@@ -48,9 +50,12 @@
 		AAA02C150BAA8EC3AB223563 /* Pods-mvvm-rxswift-boilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvm-rxswift-boilerplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mvvm-rxswift-boilerplateTests/Pods-mvvm-rxswift-boilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		ACE32D3FC441F26BBF6520A5 /* Pods_mvvm_rxswift_boilerplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_rxswift_boilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA305A8791BA06FF8D6F9934 /* Pods_mvvm_rxswift_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_rxswift_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70D846C22C6283B00697E48 /* libAtPDFSigner-Universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAtPDFSigner-Universal.a"; sourceTree = "<group>"; };
+		D70D846E22C629B400697E48 /* ATPDFSigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPDFSigner.h; sourceTree = "<group>"; };
+		D70D846F22CCA92100697E48 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		D71F7A88227B4D4E00DEA10E /* mvvm-rxswift-boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvvm-rxswift-boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71F7A8B227B4D4E00DEA10E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D71F7A8D227B4D4E00DEA10E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D71F7A8D227B4D4E00DEA10E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D71F7A90227B4D4E00DEA10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D71F7A92227B4D4F00DEA10E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D71F7A95227B4D4F00DEA10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42CF3EFCE37DDEB5B41C940A /* Pods_mvvm_rxswift_boilerplate.framework in Frameworks */,
+				D70D846D22C6283B00697E48 /* libAtPDFSigner-Universal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +117,7 @@
 		A8E73B0633A47D0DA8E9C9EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D70D846C22C6283B00697E48 /* libAtPDFSigner-Universal.a */,
 				CA305A8791BA06FF8D6F9934 /* Pods_mvvm_rxswift_boilerplate.framework */,
 				6821C2951BA11BF05C55E1D1 /* Pods_mvvm_rxswift_boilerplateTests.framework */,
 				ACE32D3FC441F26BBF6520A5 /* Pods_mvvm_rxswift_boilerplateUITests.framework */,
@@ -174,8 +181,10 @@
 		D7DBCDAC227B5C2A00FAE907 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				D70D846E22C629B400697E48 /* ATPDFSigner.h */,
 				D71F7A8B227B4D4E00DEA10E /* AppDelegate.swift */,
 				D7DBCDB5227B6EF100FAE907 /* Constants.swift */,
+				D70D846F22CCA92100697E48 /* Network.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -200,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				D7DBCDB0227B5CD700FAE907 /* SupportFiles */,
-				D71F7A8D227B4D4E00DEA10E /* LoginVC.swift */,
+				D71F7A8D227B4D4E00DEA10E /* LoginViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -446,7 +455,8 @@
 			files = (
 				D7DBCDB6227B6EF100FAE907 /* Constants.swift in Sources */,
 				D7DBCDB4227B5E0700FAE907 /* LoginViewModel.swift in Sources */,
-				D71F7A8E227B4D4E00DEA10E /* LoginVC.swift in Sources */,
+				D70D847022CCA92100697E48 /* Network.swift in Sources */,
+				D71F7A8E227B4D4E00DEA10E /* LoginViewController.swift in Sources */,
 				D7DBCDB2227B5DB300FAE907 /* LoginModel.swift in Sources */,
 				D71F7A8C227B4D4E00DEA10E /* AppDelegate.swift in Sources */,
 			);
@@ -630,6 +640,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhernandez.mvvm-rxswift-boilerplate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -647,6 +661,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhernandez.mvvm-rxswift-boilerplate";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -65,12 +65,25 @@ class LoginViewModel {
         
         isLoading.value = true
         
-        sleep(3000)
+        APIManager.login(userId: model.email, password: model.password)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { postsList in
+            
+                self.isLoading.value = false
+                self.isSuccess.value = true
+                self.goToInit()
+                
+            }, onError: { error in
+                
+                self.isLoading.value = false
+                self.isSuccess.value = false
+                self.mailErrorValue.value = self.mailErrorMsg
+            })
+            .disposed(by: disposebag)
         
-        isLoading.value = false
-        isSuccess.value = true
-        
-        
+    }
+    
+    func goToInit() {
         
     }
     

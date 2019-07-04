@@ -10,7 +10,11 @@ import Foundation
 
 struct Constants {
     
-    static let baseUrl = "http://0.0.0.0"
+    static let baseUrl = "http://ec2-54-154-76-120.eu-west-1.compute.amazonaws.com/"
+    
+    struct Parameters {
+        static let userId = "userId"
+    }
     
     //The header fields
     enum HttpHeaderField: String {
@@ -20,9 +24,9 @@ struct Constants {
         case acceptEncoding = "Accept-Encoding"
     }
     
-    //The content type (JSON)
     enum ContentType: String {
         case json = "application/json"
     }
     
+        
 }
