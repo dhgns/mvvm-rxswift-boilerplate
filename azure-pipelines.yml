@@ -29,6 +29,12 @@ steps:
   inputs:
     actions: 'archive'
     packageApp: false
+    scheme: 'mvvm-rxswift-boilerplate'
+    sdk: 'iphoneos'
+    configuration: 'Release'
+    xcWorkspacePath: '*.xcworkspace'
+    xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
+
 - task: CmdLine@2
   inputs:
     script: |
