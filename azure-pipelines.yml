@@ -10,6 +10,10 @@ pool:
   vmImage: 'macos-latest'
 
 steps:
+- task: DeleteFiles@1
+  inputs:
+    SourceFolder: 
+    Contents: 'Podfile.lock Pods *.xcworkspace'
 - task: CocoaPods@0
   inputs:
     forceRepoUpdate: false
