@@ -39,6 +39,6 @@ steps:
   inputs:
     script: |
     
-      ls build/
+      ls 
 
       
