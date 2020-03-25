@@ -17,13 +17,11 @@ steps:
 - task: CocoaPods@0
   inputs:
     forceRepoUpdate: false
-  actions: 'pod install'
-  scheme: 'mvvm-rxswift-boilerplate'
 - task: Xcode@5
   inputs:
     actions: 'build'
     scheme: 'mvvm-rxswift-boilerplate'
     sdk: 'iphoneos'
     configuration: 'Release'
-    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
+    xcWorkspacePath: '*.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
