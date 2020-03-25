@@ -25,8 +25,13 @@ steps:
     configuration: 'Release'
     xcWorkspacePath: '*.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
-- task: SSH@0
+- task: CmdLine@2
   inputs:
-    runOptions: 'inline'
-    inline: 'ls'
-    readyTimeout: '20000'
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
+      
+      ls
+
+      
