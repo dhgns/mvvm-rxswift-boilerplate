@@ -44,5 +44,10 @@ steps:
     script: |
       echo Esto es lo que queda ahora
       ls 
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
 
       
